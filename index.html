@@ -13,7 +13,7 @@
         background-size: 100%;
         background-repeat: no-repeat;
       }
-      @media (min-width: 768px)
+      @media (min-width: 376px)
       {
         body
         {
@@ -23,7 +23,17 @@
           background-repeat: no-repeat;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
+      {
+        body
+        {
+          background: hsl(257, 40%, 49%);
+          background-image: url("../images/bg-mobile.svg");
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+      @media (min-width: 376px)
       {
         header > img
         {
@@ -32,7 +42,16 @@
           padding-left: 30px;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
+      {
+        header > img
+        {
+          width: 30%;
+          padding-top: 30px;
+          padding-left: 30px;
+        }
+      }
+      @media (min-width: 376px)
       {
         main
         {
@@ -40,7 +59,7 @@
           grid-template-columns: 1fr 1fr;
         }
       }
-      @media (min-width: 768px)
+      @media (min-width: 376px)
       {
         main .ilustration
         {
@@ -49,7 +68,16 @@
           padding-left: 30px;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
+      {
+        main .ilustration
+        {
+          width: 80%;
+          padding-left: 34px;
+          padding-top: 50px;
+        }
+      }
+      @media (min-width: 376px)
       {
         main .text-content h1:nth-child(1)
         {
@@ -61,7 +89,18 @@
           padding-top: 90px;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
+      {
+        main .text-content h1:nth-child(1)
+        {
+          color: white;
+          font-family: "Popins", sans-serif;
+          font-size: 25px;
+          text-align: center;
+          padding-top: 40px;
+        }
+      }
+      @media (min-width: 376px)
       {
         main .text-content h1:nth-child(2)
         {
@@ -71,7 +110,17 @@
           padding-left: 30px;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
+      {
+        main .text-content h1:nth-child(2)
+        {
+          color: white;
+          font-family: "Popins", sans-serif;
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+      @media (min-width: 376px)
       {
         main .text-content p:nth-child(3)
         {
@@ -83,7 +132,19 @@
           padding-right: 30px;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
+      {
+        main .text-content p:nth-child(3)
+        {
+          width: 80%;
+          color:white;
+          font-family: "Popins", sans-serif;
+          font-size: 15px;
+          text-align: center;
+          padding-left: 30px;
+        }
+      }
+      @media (min-width: 376px)
       {
         main .text-content button:nth-child(4)
         {
@@ -104,15 +165,47 @@
           transition: 0.3s;
         }
       }
-      @media (min-width: 768px)
+      @media (max-width: 375px)
       {
-        .icon .fab 
+        main .text-content button:nth-child(4)
         {
-          height: 50px;
-          width: 50px;
-          font-size: 30px;
+          width: 200px;
+          height: 40px;
+          font-size: 15px;
+          margin: 80px;
+          margin-top: 10px;
+          margin-bottom: 50px;
+          justify-content: center;
+          border-radius: 30px;
+          border: transparent;
+          color: hsl(257, 40%, 49%);
+          box-shadow: 0px 1px 3px 0px black;
+        }
+        main .text-content button:hover
+        {
+          transform: scale(1.1);
+          transition: 0.3s;
         }
       }
+      @media (min-width: 376px)
+      {
+        footer
+        {
+          font-size: 30px;
+          text-align: right;
+          margin-right: 30px;
+        }
+      }
+      @media (max-width: 375px)
+      {
+        footer
+        {
+          height: 50%;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+      
     </style>
   </head>
   <body>
@@ -133,9 +226,9 @@
       </div>
     </main>
     <footer class="icon">
-      <i class="fab fab-facebook-f"></i>
-      <i class="fab fab-twiter-f"></i>
-      <i class="fab fab-twiter-f"></i>
+      <img src="./icons/facebook.png" alt="facebook"/>
+      <img src="./icons/twitter.png" alt="twitter"/>
+      <img src="./icons/instagram.png" alt="instagram"/>
     </footer>
   </body>
 </html>
