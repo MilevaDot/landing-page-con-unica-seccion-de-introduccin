@@ -3,33 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>
-      Frontend Mentor | Huddle landing page with single introductory section
-    </title>
-
-    <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
+      body
+      {
+        background: hsl(257, 40%, 49%);
+        background-image: url("../images/bg-mobile.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+      @media (min-width: 768px)
+      {
+        body
+        {
+          background: hsl(257, 40%, 49%);
+          background-image: url("../images/bg-desktop.svg");
+          background-size: 80%;
+          background-repeat: no-repeat;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        header > img
+        {
+          width: 150px;
+          padding-top: 40px;
+          padding-left: 30px;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        main
+        {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        main .ilustration
+        {
+          width: 90%;
+          padding-top: 68px;
+          padding-left: 30px;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        main .text-content h1:nth-child(1)
+        {
+          color: white;
+          font-family: "Popins", sans-serif;
+          font-size: 34px;
+          grid-column: 2/3;
+          padding-left: 30px;
+          padding-top: 90px;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        main .text-content h1:nth-child(2)
+        {
+          color: white;
+          font-family: "Popins", sans-serif;
+          font-size: 34px;
+          padding-left: 30px;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        main .text-content p:nth-child(3)
+        {
+          width: 80%;
+          color:white;
+          font-family: "Popins", sans-serif;
+          font-size: 20px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        main .text-content button:nth-child(4)
+        {
+          width: 200px;
+          height: 50px;
+          font-size: 20px;
+          margin: 30px;
+          margin-top: 10px;
+          justify-content: center;
+          border-radius: 30px;
+          border: transparent;
+          color: hsl(257, 40%, 49%);
+          box-shadow: 0px 1px 3px 0px black;
+        }
+        main .text-content button:hover
+        {
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      }
+      @media (min-width: 768px)
+      {
+        .icon .fab 
+        {
+          height: 50px;
+          width: 50px;
+          font-size: 30px;
+        }
       }
     </style>
   </head>
   <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+    <header>
+      <img src="/images/logo.svg" alt="logo" class="logo">
+    </header>
+    <main>
+      <img src="/images/illustration-mockups.svg" alt="ilustration" class="ilustration">
+      <div class="text-content">
+        <h1>Build The Community</h1>
+        <h1>Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build
+          communities. You have a voice, but so does your audience. Create connections
+          with your users as you engage in genuine discussion.
+        </p>
+        <button>Register</button>
+      </div>
+    </main>
+    <footer class="icon">
+      <i class="fab fab-facebook-f"></i>
+      <i class="fab fab-twiter-f"></i>
+      <i class="fab fab-twiter-f"></i>
+    </footer>
   </body>
 </html>
